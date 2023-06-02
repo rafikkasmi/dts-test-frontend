@@ -1,0 +1,9 @@
+<form [formGroup]="mainTaskForm" (ngSubmit)="onSubmit()">
+    <h3>Create New Main Task </h3>
+    <div class="form-group">
+        <label for="taskName">Task Name</label>
+        <input type="text" class="form-control" id="taskName" formControlName="details" placeholder="Enter task name">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

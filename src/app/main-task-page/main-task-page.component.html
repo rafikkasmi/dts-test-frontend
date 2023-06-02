@@ -1,0 +1,16 @@
+<div class="main-tasks">
+  <app-jira-task-form></app-jira-task-form>
+
+  <h2>Main Tasks:</h2>
+  <div class="main-task" *ngFor="let jiraTask of mainTask.jira_tasks">
+    <div class="main-task-name">
+      Jira Task id : {{jiraTask.task_id}}
+    </div>
+    <div class="main-task-name">
+      Task : {{jiraTask.summary}}
+    </div>
+    <div class="main-task-name">
+      Task assignee : {{jiraTask.assignee}}
+    </div>
+  </div>
+</div>

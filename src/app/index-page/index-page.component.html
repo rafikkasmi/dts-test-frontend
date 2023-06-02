@@ -1,0 +1,16 @@
+<app-main-task-form></app-main-task-form>
+
+
+<div class="main-tasks">
+    <h2>Main Tasks:</h2>
+    <a *ngFor="let mainTask of mainTasks" [routerLink]="['/main-task',mainTask.id]">
+        <div class="main-task">
+            <div class="main-task-name">
+                Task : {{mainTask.details}}
+            </div>
+            <div class="sub-tasks">
+                Jira Tasks : {{mainTask.jira_tasks ? mainTask.jira_tasks.length : 0}}
+            </div>
+        </div>
+    </a>
+</div>
